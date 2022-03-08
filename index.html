@@ -1,29 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Azota</title>
-
+<link rel="shortcut icon" type="image/svg" href="/logo.svg" />
+<title>
+  Azota preview tool
+  </title>
 </head>
-
 <body>
-    <div id="root-base">
-        <div id="form">
-            <input type="text" id="input_url" placeholder="link" />
-                <input id="input_password" type="text" placeholder="pwd" >
-                <button id="button_view" onclick="onClickGetQuestion()">GET</button>
-        </div>
-    </div>
-    <div id="question-viewer">
-    </div>
-    made by liam-parry
-</body>
-
+<link rel="stylesheet" href="./style.css" />
+<h1><a href="https://azota.vn/" target="_blank">Azota-vn</a> <a href="https://a-vn.gq/">get question tool</a></h1>
+<div id="root-base">
+<div id="form">
+<input type="text" name="link" class="question" id="input_url" required autocomplete="off" />
+<label for="url"><span>Link azota</span></label><br>
+<input type="text" name="password" class="question" id="input_password" required autocomplete="off" />
+<label for="password"><span>Mật khẩu (nếu có)</span></label>
+<br>
+<button class="button button1" id="button_view" onclick="onClickGetQuestion()">GET</button>
+</div>
+</div>
+<div id="question-viewer">
+</div>
+<h3>Mọi thông tin liên hệ <a href="/cdn-cgi/l/email-protection#a6d5e6c78bd0c888c1d7"><span class="__cf_email__" data-cfemail="077447662a7169296076">[email&#160;protected]</span></a>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<u><a href="https://a-vn.gq/">reset&nbsp;here</a></u>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</h3>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 <script src="./main.js"></script>
 <script src="./getQuestion.js"></script>
 <script src="./fixTakeOnce.js"></script>
 <script src="./joinIntoClass.js"></script>
-
-</html>
